@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <h1>INFROMACIÓN REGISTRADA </h1>
+
+    <script>
+        /**
+ * @param String name
+ * @return String
+ */
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+    </script>
+
+   
+
+<table >
+
+    <colgroup>
+        <col>
+    </colgroup>
+    <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Telefono</td>
+
+
+    </tr>
+    <tr>
+        <td>
+            <script>
+                document.write(getParameterByName('nombre'));
+            </script>
+        </td>
+
+        <td>
+            <script>
+                document.write(getParameterByName('Apellido'));
+            </script>
+        </td>
+
+        <td>
+            <script>
+                document.write(getParameterByName('Telefono'));
+            </script>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
