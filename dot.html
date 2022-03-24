@@ -28,10 +28,14 @@ function getParameterByName(name) {
     <colgroup>
         <col>
     </colgroup>
+
     <tr>
         <td>Nombre</td>
         <td>Apellido</td>
         <td>Telefono</td>
+        <td>Correo</td>
+        <td>Usuario</td>
+        <td>Clave</td>
 
 
     </tr>
@@ -53,6 +57,22 @@ function getParameterByName(name) {
                 document.write(getParameterByName('Telefono'));
             </script>
         </td>
+        <td>
+            <script>
+                document.write(getParameterByName('Correo'));
+            </script>
+        </td>
+        <td>
+            <script>
+                document.write(getParameterByName('Usuario'));
+            </script>
+        </td>
+        <td>
+            <script>
+                document.write(getParameterByName('Clave'));
+            </script>
+        </td>
+
     </tr>
 </table>
 </body>
