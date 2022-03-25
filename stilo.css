@@ -3,9 +3,11 @@
     font-family: 'PT Sans';
     font-size: x-large;
     font-style: oblique;
+   
 }
 
 table{
+    border-style: 1px solid black;
     border-collapse: collapse;
     text-align: center;
     margin: auto;
@@ -17,9 +19,14 @@ table{
 table tr:nth-child(1){
     background-color: rgb(158, 141, 133);
     background: rgb(189, 150, 150);
+    border-style: 1px solid black;
 
 }
 td{
+    border: 1px solid #848484;
+    color:rgb(19, 19, 20)
+}
+th{
     border: 1px solid #848484;
     color:rgb(19, 19, 20)
 }
